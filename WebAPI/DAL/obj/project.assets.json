@@ -1583,22 +1583,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "DAL/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.0",
-          "Microsoft.EntityFrameworkCore": "5.0.0",
-          "Microsoft.EntityFrameworkCore.Relational": "5.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0"
-        },
-        "compile": {
-          "bin/placeholder/DAL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DAL.dll": {}
-        }
       }
     }
   },
@@ -5914,16 +5898,13 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
-    },
-    "DAL/1.0.0": {
-      "type": "project",
-      "path": "../DAL/DAL.csproj",
-      "msbuildProject": "../DAL/DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "DAL >= 1.0.0",
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.0",
+      "Microsoft.EntityFrameworkCore >= 5.0.0",
+      "Microsoft.EntityFrameworkCore.Relational >= 5.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.0"
     ]
@@ -5936,11 +5917,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\450G6\\source\\repos\\ASP.NET-Core-3.1-Web-API-Entity-Framework-Core-Database-First-Approach\\WebAPI\\WebAPI\\WebAPI.csproj",
-      "projectName": "WebAPI",
-      "projectPath": "C:\\Users\\450G6\\source\\repos\\ASP.NET-Core-3.1-Web-API-Entity-Framework-Core-Database-First-Approach\\WebAPI\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\450G6\\source\\repos\\ASP.NET-Core-3.1-Web-API-Entity-Framework-Core-Database-First-Approach\\WebAPI\\DAL\\DAL.csproj",
+      "projectName": "DAL",
+      "projectPath": "C:\\Users\\450G6\\source\\repos\\ASP.NET-Core-3.1-Web-API-Entity-Framework-Core-Database-First-Approach\\WebAPI\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\450G6\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\450G6\\source\\repos\\ASP.NET-Core-3.1-Web-API-Entity-Framework-Core-Database-First-Approach\\WebAPI\\WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\450G6\\source\\repos\\ASP.NET-Core-3.1-Web-API-Entity-Framework-Core-Database-First-Approach\\WebAPI\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -5960,11 +5941,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {
-            "C:\\Users\\450G6\\source\\repos\\ASP.NET-Core-3.1-Web-API-Entity-Framework-Core-Database-First-Approach\\WebAPI\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\450G6\\source\\repos\\ASP.NET-Core-3.1-Web-API-Entity-Framework-Core-Database-First-Approach\\WebAPI\\DAL\\DAL.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -5976,6 +5953,18 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
+          "Microsoft.EntityFrameworkCore.Relational": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[5.0.0, )"
@@ -5998,9 +5987,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
